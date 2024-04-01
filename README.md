@@ -1,174 +1,261 @@
-# just-the-docs-template
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+<a name="readme-top"></a>
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-More specifically, the created site:
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
 
-To get started with creating a site, simply:
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest">
+    <img src="images/logo.png" alt="Logo" width="200" height="120">
+  </a>
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+  <h3 align="center">AI Innovation Challenge</h3>
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+  <p align="center">
+    Interactive CAD designer with Nvidia AGX Orin.
+    <br />
+    <a href="https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest">View Demo</a>
+    ·
+    <a href="https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest/issues">Request Feature</a>
+  </p>
+</div>
 
-After completing the creation of your new site on GitHub, update it as needed:
 
-## Replace the content of the template pages
 
-Update the following files to your own content:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
 
-## Changing the version of the theme and/or Jekyll
 
-Simply edit the relevant line(s) in the `Gemfile`.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Adding a plugin
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+Here's why:
+* Your time should be focused on creating something amazing. A project that solves a problem and helps others
+* You shouldn't be doing the same tasks over and over like creating a README from scratch
+* You should implement DRY principles to the rest of your life :smile:
 
-- Add the following to your site's `Gemfile`:
+Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
-  ```ruby
-  gem "jekyll-default-layout"
+Use the `BLANK_README.md` to get started.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Svelte][Svelte.dev]][Svelte-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
   ```
 
-- And add the following to your site's `_config.yml`:
+### Installation
 
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
 
-## Publishing your site on GitHub Pages
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
 
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
 
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
+<!-- USAGE EXAMPLES -->
+## Usage
 
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-2.  Push your updated `_config.yml` to your site on GitHub.
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Building and previewing your site locally
 
-Assuming [Jekyll] and [Bundler] are installed on your computer:
 
-1.  Change your working directory to the root directory of your site.
+<!-- ROADMAP -->
+## Roadmap
 
-2.  Run `bundle install`.
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
 
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
+See the [open issues](https://github.com/Trushant-Adeshara-UM/amd_dev_contest/issues) for a full list of proposed features (and known issues).
 
-    The built site is stored in the directory `_site`.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Publishing your built site on a different platform
 
-Just upload all the files in the directory `_site`.
 
-## Customization
+<!-- CONTRIBUTING -->
+## Contributing
 
-You're free to customize sites that you create with this template, however you like!
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-## Hosting your docs from an existing project repo
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Copy the template files
 
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
 
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
+<!-- LICENSE -->
+## License
 
-### Modify the GitHub Actions workflow
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-1.  Set the default `working-directory` param for the build job.
 
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
 
-2.  Set the `working-directory` param for the Setup Ruby step.
+<!-- CONTACT -->
+## Contact
 
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-3.  Set the path param for the Upload artifact step:
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: "docs/_site/"
-    ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
 
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
 
-## Licensing and Attribution
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
 
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
 
-----
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Trushant-Adeshara-UM/nvidia_dev_contest.svg?style=for-the-badge
+[contributors-url]: https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Trushant-Adeshara-UM/nvidia_dev_contest.svg?style=for-the-badge
+[forks-url]: https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest/forks
+[stars-shield]: https://img.shields.io/github/stars/Trushant-Adeshara-UM/nvidia_dev_contest.svg?style=for-the-badge
+[stars-url]: https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Trushant-Adeshara-UM/nvidia_dev_contest.svg?style=for-the-badge
+[issues-url]: https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest/issues
+[license-shield]: https://img.shields.io/github/license/Trushant-Adeshara-UM/nvidia_dev_contest.svg?style=for-the-badge
+[license-url]: https://github.com/Trushant-Adeshara-UM/nvidia_dev_contest/blob/main/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/trushant-adeshara/
+[product-screenshot]: images/screenshot.jpeg
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com 

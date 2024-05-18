@@ -59,7 +59,7 @@ jobs:
         run: |
           npm i -D pagecrypt
           pwd
-          cat "${{ steps.pages.outputs.base_path}}/_protected_pages.txt" | while read file password;
+          cat '${{ github.workspace }}'/_protected_pages.txt | while read file password;
           do
             sudo npx pagecrypt "_site/$file" "_site/$file" "$password"
           done

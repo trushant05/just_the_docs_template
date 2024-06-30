@@ -24,7 +24,7 @@
     <img src="images/logo.png" alt="Logo" width="200" height="120">
   </a>
 
-  <h3 align="center">Base Template</h3>
+  <h3 align="center">Just the Docs Template</h3>
   
   <p align="center">
     <br />
